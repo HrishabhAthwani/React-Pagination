@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.products-container {
+  width: 100vw;
+  height: calc(100vh - 40px);
+  text-align: left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.product-item {
+  display: block;
+  border: 1px solid black;
+}
+.footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.PGT-main {
+  width: calc(100% - 40px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: azure;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* white-space: nowrap; */
+}
+.PGT-main::-webkit-scrollbar {
+  display: none;
+}
+.pgt-button,
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+.active {
+  background-color: cadetblue;
+}
+
+.pgt-button:hover,
+.nav-btn:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+#perPageCountSelector {
+  height: 40px;
+  padding: 0px;
+  font-size: larger;
+}
